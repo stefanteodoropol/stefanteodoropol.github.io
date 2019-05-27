@@ -1,0 +1,142 @@
+/* This file holds CSS style information for my personal website. */
+/* Creator: Stefan Nicolae Teodoropol */
+/* Date: 24.07.2019 */
+
+/* BEGIN Class-level declarations */
+
+/* BEGIN Header style */
+.header-image {
+	height: 540px;
+	background-color: #cccccc;
+	background-image: url("./images/zuri.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header-text {
+	text-align: center;
+	position: relative;
+	top: 15%;
+	color: white;
+}
+/* END Header style */
+
+/* BEGIN Content style */
+.content {
+	background-color: #222;
+}
+
+.content-post {
+	border-style: solid none none none;
+	border-width: 10px;
+	border-color: white;
+}
+
+.content-text {
+	font-size: 100%;
+	color: white;
+	padding: 10px;
+}
+
+.avatar {
+	vertical-align: bottom;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.last-post {
+	border-style: solid none solid none !important;
+}
+/* END Content style*/
+
+/* BEGIN Footer style */
+.footer-image {
+	height: 540px;
+	background-color: #cccccc;
+	background-image: url("./images/zuri2.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer-text {
+	text-align: center;
+	position: relative;
+	top: 10%;
+	color: #5a7983;
+}
+
+.email-text {
+	letter-spacing: 0.01em;
+}
+
+.copyright-text {
+	color: gray;
+	text-align: center;
+}
+/* END Footer style */
+
+/* END Class-level declarations */
+
+/* BEGIN Tag-level declarations */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.1em;
+	margin:0 !important;
+}
+
+h1 {
+	font-weight: 100;
+	letter-spacing: 0.1em;
+	margin:0 !important;
+}
+
+h2 {
+	font-weight: 100;
+	letter-spacing:0.1em;
+}
+
+p {
+	letter-spacing: 0.08em;
+	text-align: justify;
+}
+
+a {
+	color: white;
+}
+/* END Tag-level declarations */
+
+/* BEGIN Mobile-first code */
+/* This part of the code creates 3 behaviors depending on the current screen width */
+
+/* The screen is 400px wide or less */
+@media all and (max-width: 400px) {
+	body {
+		font-size: 4vw;
+		}
+	.footer-text {
+		font-size: 3vw;
+		}
+}
+
+/* The screen is between 401px and 900 px wide */
+@media all and (min-width: 401px) {
+	body {
+		font-size: 100%;
+		}
+	.footer-text {
+		font-size: 75%;
+		}
+}
+
+/* The screen is wider than 400px */
+@media all and (min-width: 901px) {
+	.content-text {
+		width: 900px;
+		margin: auto;
+	}
+}
+/* END Mobile-first code */
