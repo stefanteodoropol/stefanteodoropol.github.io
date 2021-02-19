@@ -2,7 +2,8 @@
 <html lang="en">
 <!-- Welcome to my personal website! -->
 <!-- Creator: Stefan Nicolae Teodoropol -->
-<!-- Date: 24.07.2019 -->
+<!-- Date: 19.02.2021 -->
+<!-- Version 1.0.1 : Added script for my age -->
 	<head>
 		<!-- Website title -->
 		<title>Stefan Teodoropol Online</title>
@@ -30,7 +31,18 @@
 			<div class ="content-post">
 				<div class ="content-text">
 					<h1>Who I am</h1>
-					<p>Hi! My name is Stefan Nicolae Teodoropol and I'm a 29 year old computer science student living in Zürich. Welcome!</p>
+					<p id="myage">Hi! My name is Stefan Nicolae Teodoropol and I'm a 31 year old computer science student living in Zürich. Welcome!</p>
+					<script>
+					function _calculateAge(birthday) { // birthday is a date
+						var today = new Date();
+						var age = today.getFullYear() - birthday.getFullYear();
+						var m = today.getMonth() - birthday.getMonth();
+						if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) { age--; }
+						return age;
+					}
+					var age = _calculateAge(new Date(Date.UTC(1990,1,2,0,0,0,0)));
+					document.getElementById("myage").innerHTML = "Hi! My name is Stefan Nicolae Teodoropol and I'm a " + age + " year old computer science student living in Zürich. Welcome!"
+					</script>
 				</div>
 			</div>
 			<div class ="content-post">
