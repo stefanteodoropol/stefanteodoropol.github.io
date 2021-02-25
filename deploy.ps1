@@ -6,7 +6,7 @@ Start-Transcript -path D:\a\1\a\output.txt -append
 
 $source = Get-Location
 $exclude = @('CNAME','README.md','deploy.ps1')
-Get-ChildItem $source -Recurse -Exclude $exclude | Copy-Item -Destination D:\a\1\a\deploy
+Get-ChildItem $source -Recurse -Container -Exclude $exclude | Copy-Item -Destination D:\a\1\a\deploy
 
 dir | ECHO
 
