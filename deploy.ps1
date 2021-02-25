@@ -4,16 +4,19 @@ $ErrorActionPreference = "Continue"
 Start-Transcript -path D:\a\1\a\output.txt -append
 # Do some stuff
 
+$source = Get-Location
+$exclude = @('CNAME','README.md','deploy.ps1')
+Get-ChildItem $source -Recurse -Exclude $exclude | Copy-Item -Destination D:\a\1\a\deploy
+
 dir | ECHO
 
-Remove-Item .\deploy -Recurse
-New-Item -ItemType directory -Path .\deploy\
-$source = Get-Location
-$dest = Join-Path -Path $source -ChildPath "\deploy"
-$exclude = @('CNAME','README.md','deploy.ps1')
-Get-ChildItem $source -Recurse -Exclude $exclude | Copy-Item -Destination {Join-Path $dest $_.FullName.Substring($source.length)}
+cd D:\a\1\a
+
+dir | ECHO
+
+cd D:\a\1\a\deploy
+
+dir | ECHO
 
 # End doing stuff
 Stop-Transcript
-
-
