@@ -5,7 +5,7 @@ Start-Transcript -path D:\a\1\a\output.txt -append
 # Do some stuff
 
 $exclude = @('CNAME','README.md','deploy.ps1')
-Copy-Item .\* -Destination D:\a\1\a\deploy\ -Recurse -Exclude $exclude
+Copy-Item .\* -Destination D:\a\1\a\deploy -Recurse -Exclude $exclude
 
 dir | ECHO
 
