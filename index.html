@@ -31,16 +31,16 @@
 			<div class ="content-post">
 				<div class ="content-text">
 					<h1>Who I am</h1>
-					<p id="myage">Hi! My name is Stefan Nicolae Teodoropol and I'm a 31 year old computer science student living in Zürich. Welcome!</p>
+					<p id="myage">Hi! My name is Stefan Nicolae Teodoropol and I'm a 32 year old computer science student living in Zürich. Welcome!</p>
 					<script>
 					function _calculateAge(birthday) { // birthday is a date
-						var today = new Date();
-						var age = today.getFullYear() - birthday.getFullYear();
-						var m = today.getMonth() - birthday.getMonth();
-						if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) { age--; }
-						return age;
+						let today = new Date();
+						let years = today.getFullYear() - birthday.getFullYear();
+						let m = today.getMonth() - birthday.getMonth();
+						if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) { years--; }
+						return years;
 					}
-					var age = _calculateAge(new Date(Date.UTC(1990,1,2,0,0,0,0)));
+					let age = _calculateAge(new Date(Date.UTC(1990,1,2,0,0,0,0)));
 					document.getElementById("myage").innerHTML = "Hi! My name is Stefan Nicolae Teodoropol and I'm a " + age + " year old computer science student living in Zürich. Welcome!"
 					</script>
 				</div>
