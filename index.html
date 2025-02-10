@@ -2,8 +2,11 @@
 <html lang="en">
 <!-- Welcome to my personal website! -->
 <!-- Creator: Stefan Nicolae Teodoropol -->
-<!-- Date: 10.10.2022 -->
+<!-- Date: 10.02.2025 -->
+<!-- Version 1.0.1 : Added script for my age -->
 <!-- Version 1.0.2 : Info update -->
+<!-- Version 1.0.3 : Info update -->
+<!-- Version 1.0.4 : Info update -->
 	<head>
 		<!-- Website title -->
 		<title>Stefan Teodoropol Online</title>
@@ -31,7 +34,7 @@
 			<div class ="content-post">
 				<div class ="content-text">
 					<h1>Who I am</h1>
-					<p id="myage">Hi! My name is Stefan Nicolae Teodoropol and I'm a 32 year old computer science student living in Zürich. Welcome!</p>
+					<p id="myage">Hi! My name is Stefan Nicolae Teodoropol and I'm a 35 year old IT Guru living in Zürich. Welcome!</p>
 					<script>
 					function _calculateAge(birthday) { // birthday is a date
 						let today = new Date();
@@ -41,31 +44,35 @@
 						return years;
 					}
 					let age = _calculateAge(new Date(Date.UTC(1990,1,2,0,0,0,0)));
-					document.getElementById("myage").innerHTML = "Hi! My name is Stefan Nicolae Teodoropol and I'm a " + age + " year old computer science student living in Zürich. Welcome!"
+					document.getElementById("myage").innerHTML = "Hi! My name is Stefan Nicolae Teodoropol and I'm a " + age + " year old IT Guru living in Zürich. Welcome!"
 					</script>
 				</div>
 			</div>
 			<div class ="content-post">
 				<div class ="content-text">
 					<h1>What I do</h1>
-					<p>I'm an IT / computer hardware guru looking for a challenge!</p>
-					<p>After my studies (from Sep. 2023 onwards) I will be interested in working on projects based around Zürich.</p>
-					<p>When I'm not studying or making music, I really enjoy using multiple online learning platforms. Check out my progress:</p>
-					<ul>
-						<li><a href="https://www.freecodecamp.org/stefanteodoropol">freecodecamp.org</a>
-						<p>A great place to interactively start learning HTML and CSS.
-						<li><a href="https://www.codingame.com/profile/b5a550eff32e2c0162dff44443cf066b9062243">codingame.com</a>
-						<p>Pick your favourite language and start solving challenges against other programmers around the world in real time! 
-						<li><a href="https://www.spoj.com/users/snteodoropol/">spoj.com</a>
-						<p>Sphere online judge is a great site with many classical coding challenges to solve. 
-					</ul>
+					<p>I'm an IT / computer hardware guru and am always up for a challenge!</p>
+					<p>Currently I am working as a Senior Software Developer for <a href = "https://www.csl.li/">CSL Corporate Services (Schweiz) AG</a> - a Zurich based FinTech with roots in Liechtenstein.  
+					<p>I am open to taking on new challenges involving quality automation (DevSecOps / Testing / Quality Manager) and am generally open to interesting offers.</p>
+					<p>In my free time I practice martial arts (Japanese Jiu Jitsu) and like making music (Synthesizer, Guitar, Ableton). 
 					</div>
 			</div>
 			<div class ="content-post">
 				<div class ="content-text">
 					<h1>How I code</h1>
-					<p>I have a <a href="https://github.com/stefanteodoropol">GitHub account</a> - in fact, this site is also hosted on GitHub! <a href="https://github.com/stefanteodoropol/stefanteodoropol.github.io">Check it out!</a></p>
-					<p>I have in-depth knowledge of these technologies:</p>
+					<p>I have a <a href="https://github.com/stefanteodoropol">GitHub account</a> - in fact, this site's code is also on GitHub! <a href="https://github.com/stefanteodoropol/stefanteodoropol.github.io">Check it out!</a></p>
+					<p>In my current role, I am working a lot with the following technologies:</p>
+					<ul>
+						<li>C#
+						<li>DevExpress
+						<li>PostgreSQL
+						<li>Azure
+						<li>Docker / TestContainers
+						<li>Git
+						<li>Jira
+						<li>Confluence	
+					</ul>
+					<p>I additionally have in-depth knowledge of these technologies:</p>
 					<ul>
 						<li>Java
 						<li>Python
@@ -75,25 +82,26 @@
 						<li>HTML
 						<li>JavaScript
 						<li>CSS
-						<li>Azure
 						<li>PowerShell
-						<li>Git
-						<li>Machine Learning</li>
+						<li>Machine Learning
 					</ul>
-					<p>I am currently learning more about:</p>
+					<p>Other technologies I've worked with previously include:</p>
 					<ul>
 						<li>WebAssembly
-						<li>AI / Neural Networks
-					</ul>
-					<p>I've also used:</p>
-					<ul>
 						<li>Angular
 						<li>React
-						<li>Docker
 						<li>Spring Boot
 						<li>MySQL
-						<li>C#
 						<li>Android Studio
+					</ul>
+					<p>Additionaly I really enjoy using multiple online learning platforms. Check out my progress:</p>
+					<ul>
+						<li><a href="https://www.freecodecamp.org/stefanteodoropol">freecodecamp.org</a>
+						<p>A great place to interactively start learning HTML and CSS.
+						<li><a href="https://www.codingame.com/profile/b5a550eff32e2c0162dff44443cf066b9062243">codingame.com</a>
+						<p>Pick your favourite language and start solving challenges against other programmers around the world in real time! 
+						<li><a href="https://www.spoj.com/users/snteodoropol/">spoj.com</a>
+						<p>Sphere online judge is a great site with many classical coding challenges to solve. 
 					</ul>
 				</div>
 			</div>
@@ -102,8 +110,10 @@
 				<div class ="content-text">
 					<h1>Previous IT Work</h1>
 						<ul>
-							<li>Current - Working Student - <a href="https://www.zurich.com/">Zurich Insurance Group Ltd</a>
-								<p>I am currently studying and working part time in the Investment Applications - Strategy Development team.</p>
+							<li>2023 - Present - Senior Software Developer - <a href = "https://www.csl.li/">CSL Corporate Services (Schweiz) AG</a>
+								<p>In my current role as a Senior Software Developer, I am a product owner and project manager of the reconciliation tool, continuously developing and delivering holistic solutions for both internal and external clients with a focus on providing accurate financial data and services. Additionally I am working on various projects pertaining to improving the code base, increasing data quality and providing robust service testing and monitoring solutions.</p>
+							<li>2019 - 2023 - Software Developer (50%) - <a href="https://www.zurich.com/">Zurich Insurance Group Ltd</a>
+								<p>During my studies I was working part time in the Investment Applications - Strategy Development team.</p>
 							<li>2019 - Website Developer - <a href="https://www.teodoropol.ch">Stefan Teodoropol Online</a>
 								<p>As a first step towards a personal online presence, I have written a simple landing page with my contact info.</p>
 							<li>2018 - DevOps Engineer - <a href="https://www.citavi.com/en">Citavi, Swiss Academic Software GmbH</a>
@@ -121,7 +131,7 @@
 				<h1>Let's start!</h1>
 				<h2>+41 78 679 19 56</h2>
 				<h2 class="email-text">stefan.teodoropol@gmail.com</h2>
-				<p class="copyright-text">© 2019 Stefan Nicolae Teodoropol</p>
+				<p class="copyright-text">© 2025 Stefan Nicolae Teodoropol</p>
 			</div>
 		</div>
 		<!-- END FOOTER -->
